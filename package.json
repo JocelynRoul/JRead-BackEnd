@@ -1,0 +1,22 @@
+{
+  "name": "jread-backend",
+  "version": "1.0.0",
+  "description": "// git //",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JocelynRoul/JRead-BackEnd.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JocelynRoul/JRead-BackEnd/issues"
+  },
+  "homepage": "https://github.com/JocelynRoul/JRead-BackEnd#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
