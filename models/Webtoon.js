@@ -8,3 +8,5 @@ class Webtoon {
     return this.id;
   }
 }
+
+module.exports = Webtoon;
