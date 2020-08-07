@@ -1,13 +1,13 @@
 import Webtoon from "../models/Webtoon";
-import { getRepository, Repository } from 'typeorm';
+import { getRepository} from 'typeorm';
 import '../config/DBConnection'
 
-class WebtoonDAO {
-
-    static async getAllWebtoon(display: (arg: Webtoon[]) => void){
-        const listWebtoon = await getRepository(Webtoon).find();
-        display(listWebtoon);
-    }
+const findAll = async (): Promise<Webtoon[]> => {
+    return getRepository(Webtoon).find();
 }
 
-export default WebtoonDAO;
+const webtoonDAO = {
+    findAll
+};
+
+export default webtoonDAO;

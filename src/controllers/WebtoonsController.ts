@@ -1,9 +1,10 @@
 import { Request, Response } from "express";
-import webtoonsDAO from '../daos/WebtoonsDAO';
+import webtoonDAO from '../daos/WebtoonsDAO';
 
-export const getAllWebtoon = (req: Request, res: Response) => {
-    // res.setHeader('Access-Control-Allow-Origin', '*')
-    webtoonsDAO.getAllWebtoon((listWebtoon) => {
-        res.json(listWebtoon);
-    })
+export const getAllWebtoon = async (req: Request, res: Response) => {
+
+    const webtoonList = await webtoonDAO.findAll();
+
+    res.json(webtoonList);
+
 }
